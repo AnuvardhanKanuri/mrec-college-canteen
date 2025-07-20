@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrecCanteen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class="fas-fa-utensils"></i>MREC E-FOOD CART</a>
+        <nav class="navbar">
+            <a href="#home" id="home" class="active">Home</a>
+            <a href="#top pics" id="special">Special</a>
+            <a href="#about" id="about">About</a>
+            <a href="#reviews" id="review">Reviews</a>
+            <a href="#helpline" id="contant">Helpline</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa fa-bars" aria-hidden="true" id="menu-bars"></i>
+            <i class="fa fa-search" aria-hidden="true" id = "serch_button"></i>
+            <i class="fa fa-cart-arrow-down" aria-hidden="true" id="cartbtn"></i>
+        </div>
+        <div id="search-box" style="display:none;">
+            <input type="text" id="search-input" placeholder="Search items..." />
+            <div id="search-suggestions" style="display:none;"></div>
+
+          </div>
+          
+    </header>
+    
+    <!--home section-->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>HAVE IT...!</span>
+                        <h3>spicy noodles</h3>
+                        <p>taste hot and tasty spicy noddles at just RS:120/-</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/image1.png" alt="img_">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>TASTE THIS..!</span>
+                        <h3>biriyani</h3>
+                        <p>ice cream hot and tasty spicy noddles at just RS:110/-</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/image2.png" alt="img_">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>SUMMER SPECIAL</span>
+                        <h3> ice creams</h3>
+                        <p>taste hot and tasty spicy noddles at just RS:120/-</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/image3.png" alt="img_" >
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>only for you</span>
+                        <h3>Combo carnival</h3>
+                        <p>taste hot and tasty spicy noddles at just RS:120/-</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/image4.png" alt="img_">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>dare to leep</span>
+                        <h3>BURGUR</h3>
+                        <p>taste hot and tasty spicy noddles at just RS:120/-</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/image5.png" alt="img_">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--
+        main menu
+    -->
+    <div class="main-menu">
+        <div class="main-filter">
+            <div class="main-arrow">
+            <h2 class="main-title">Menu <br>category</h2>
+
+                <i class="fa fa-arrow-circle-left" aria-hidden="true" id="nxt"></i>
+                <i class="fa fa-arrow-circle-right" aria-hidden="true" id="prev"></i>
+            </div>
+        
+        <div class="filter-wrapper">
+            <div class="filter-card" id="c1">
+                <div class="filter-icon">
+                    <img src="img/menu0.png" alt="">
+                </div>
+                <p>samosas</p>
+            </div>
+             <div class="filter-card" id="c2">
+                <div class="filter-icon">
+                    <img src="img/menu1.png" alt="burger">
+                </div>
+                <p>Burger</p>
+            </div>
+            <div class="filter-card" id="c3">
+                <div class="filter-icon">
+                    <img src="img/menu2.png" alt="">
+                </div>
+                <p>Pizza</p>
+            </div>
+            <div class="filter-card" id="c4">
+                <div class="filter-icon">
+                    <img src="img/menu8.png" alt="">
+                </div>
+                <p>Biriyani</p>
+            </div>
+            <div class="filter-card" id="c5">
+                <div class="filter-icon">
+                    <img src="img/menu3.png" alt="" width="70px">
+                </div>
+                <p>Drinks</p>
+            </div>
+            <div class="filter-card" id="c6">
+                <div class="filter-icon">
+                    <img src="img/menu4.png" alt="">
+                </div>
+                <p>Ice Cream</p>
+            </div>
+            <div class="filter-card" id="c7">
+                <div class="filter-icon">
+                    <img src="img/menu9.png" alt="">
+                </div>
+                <p>Deserts</p>
+            </div>
+            <div class="filter-card" id="c8">
+                <div class="filter-icon">
+                    <img src="img/menu5.png" alt="" width="70px">
+                </div>
+                <p>Coffie</p>
+            </div>
+            <div class="filter-card" id="c9">
+                <div class="filter-icon">
+                    <img src="img/menu6.png" alt="">    
+                </div>
+                <p>Sea food</p>
+            </div>
+            <div class="filter-card" id="c10">
+                <div class="filter-icon">
+                    <img src="img/menu7.png" alt="">
+                </div>
+                <p>Healthy</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--items of menu-->
+    <section class="samosas" id="samosas">
+        <div id="samosa_block">
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="img/sam1.png" alt="" width="300px">
+                    <a href="#" class="fa fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <h3 class="name">onion samosa</h3>
+                    <p>thintey thinali anipistundhi bro..!</p>
+                    <button class="add-to-cart">Add to cart</button>
+                    <span class="price">RS:50</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="img/sam2.png" alt="" width="300px">
+                    <a href="#" class="fa fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <h3 class="name">alu samosa</h3>
+                    <p>thintey thinali anipistundhi bro..!</p>
+                    <button class="add-to-cart">Add to cart</button>
+                    <span class="price">RS:50</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="img/sam3.png" alt="" width="300px">
+                    <a href="#" class="fa fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <h3 class="name">Egg samosa</h3>
+                    <p>thintey thinali anipistundhi bro..!</p>
+                    <button class="add-to-cart">Add to cart</button>
+                    <span class="price">RS:50</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="burger_block">
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="img/bur1.png" alt="" width="300px">
+                        <a href="#" class="fa fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+    
+                        </div>
+                        <h3 class="name">chicken burger</h3>
+                        <p>thintey thinali anipistundhi bro..!</p>
+                        <button class="add-to-cart">Add to cart</button>
+                        <span class="price">RS:50</span>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="img/bur2.png" alt="" width="300px">
+                        <a href="#" class="fa fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+    
+                        </div>
+                        <h3 class="name">Veg burger</h3>
+                        <p>thintey thinali anipistundhi bro..!</p>
+                    <button class="add-to-cart">Add to cart</button>
+                        <span class="price">RS:50</span>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="img/bur3.png" alt="" width="300px">
+                        <a href="#" class="fa fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+    
+                        </div>
+                        <h3 class="name">chess burger</h3>
+                        <p>thintey thinali anipistundhi bro..!</p>
+                        <button class="add-to-cart">Add to cart</button>
+                        
+                        <span class="price">RS:50</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div id="pizza_block">
+                <div class="box-container">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/piz1.png" alt="" width="300px">
+                            <a href="#" class="fa fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+        
+                            </div>
+                            <h3 class="name">chicken pizza</h3>
+                            <p>thintey thinali anipistundhi bro..!</p>
+                            <button class="add-to-cart">Add to cart</button>
+                            <span class="price">RS:50</span>
+                        </div>
+                    </div>
+        
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/piz2.png" alt="" width="300px">
+                            <a href="#" class="fa fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+        
+                            </div>
+                            <h3 class="name">tomato pizza </h3>
+                            <p>thintey thinali anipistundhi bro..!</p>
+                            <button class="add-to-cart">Add to cart</button>
+                            <span class="price">RS:50</span>
+                        </div>
+                    </div>
+        
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/piz3.png" alt="" width="300px">
+                            <a href="#" class="fa fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+        
+                            </div>
+                            <h3 class="name">veg pizza</h3>
+                            <p>thintey thinali anipistundhi bro..!</p>
+                    <button class="add-to-cart">Add to cart</button>
+                            
+                            <span class="price">RS:50</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="biriyani_block">
+                    <div class="box-container">
+                        <div class="box">
+                            <div class="image">
+                                <img src="img/bir1.png" alt="" width="300px">
+                                <a href="#" class="fa fa-heart"></a>
+                            </div>
+                            <div class="content">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+            
+                                </div>
+                                <h3 class="name">chicken biriyani</h3>
+                                <p>thintey thinali anipistundhi bro..!</p>
+                                <button class="add-to-cart">add to cart</button>
+                                <span class="price">RS:50</span>
+                            </div>
+                        </div>
+            
+                        <div class="box">
+                            <div class="image">
+                                <img src="img/bir2.png" alt="" width="300px">
+                                <a href="#" class="fa fa-heart"></a>
+                            </div>
+                            <div class="content">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+            
+                                </div>
+                                <h3 class="name">egg biriyani</h3>
+                                <p>thintey thinali anipistundhi bro..!</p>
+                                <button class="add-to-cart">add to cart</button>
+                                <span class="price">RS:50</span>
+                            </div>
+                        </div>
+            
+                        <div class="box">
+                            <div class="image">
+                                <img src="img/bir3.png" alt="" width="300px">
+                                <a href="#" class="fa fa-heart"></a>
+                            </div>
+                            <div class="content">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+            
+                                </div>
+                                <h3 class="name">veg biriyani</h3>
+                                <p>thintey thinali anipistundhi bro..!</p>
+                                <button class="add-to-cart">add to cart</button>
+                                <span class="price">RS:50</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="cool_block">
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="image">
+                                    <img src="img/cool1.png" alt="" width="300px">
+                                    <a href="#" class="fa fa-heart"></a>
+                                </div>
+                                <div class="content">
+                                    <div class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                
+                                    </div>
+                                    <h3>Tumbs Up</h3>
+                                    <p>Taste the Thunder bro..!</p>
+                                    <a href="#" class="add-to-cart">add to cart</a>
+                                    <span class="price">RS:50</span>
+                                </div>
+                            </div>
+                
+                            <div class="box">
+                                <div class="image">
+                                    <img src="img/cool2.png" alt="" width="300px">
+                                    <a href="#" class="fa fa-heart"></a>
+                                </div>
+                                <div class="content">
+                                    <div class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                
+                                    </div>
+                                    <h3>Fruity</h3>
+                                    <p>Tag that Fruity Batch bro..!</p>
+                                    <a href="#" class="add-to-cart">add to cart</a>
+                                    <span class="price">RS:50/-</span>
+                                </div>
+                            </div>
+                
+                            <div class="box">
+                                <div class="image">
+                                    <img src="img/cool3.png" alt="" width="300px">
+                                    <a href="#" class="fa fa-heart"></a>
+                                </div>
+                                <div class="content">
+                                    <div class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                
+                                    </div>
+                                    <h3>Sprite</h3>
+                                    <p>tDrink and Chill bro..!</p>
+                                    <a href="#" class="add-to-cart">add to cart</a>
+                                    <span class="price">RS:50/-</span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="ice_block">
+                            <div class="box-container">
+                                <div class="box">
+                                    <div class="image">
+                                        <img src="img/ice1.png" alt="" width="300px">
+                                        <a href="#" class="fa fa-heart"></a>
+                                    </div>
+                                    <div class="content">
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                    
+                                        </div>
+                                        <h3>Ice Creams 3</h3>
+                                        <p>thintey thinali anipistundhi bro..!</p>
+                                        <a href="#">add to cart</a>
+                                        <span class="price">RS:50/-</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="box">
+                                    <div class="image">
+                                        <img src="img/ice2.png" alt="" width="300px">
+                                        <a href="#" class="fa fa-heart"></a>
+                                    </div>
+                                    <div class="content">
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                    
+                                        </div>
+                                        <h3>Straw Bery</h3>
+                                        <p>thintey thinali anipistundhi bro..!</p>
+                                        <a href="#">add to cart</a>
+                                        <span class="price">RS:50/-</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="box">
+                                    <div class="image">
+                                        <img src="img/ice3.png" alt="" width="300px">
+                                        <a href="#" class="fa fa-heart"></a>
+                                    </div>
+                                    <div class="content">
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                    
+                                        </div>
+                                        <h3>YEDHO Ice Cream </h3>
+                                        <p>thintey thinali anipistundhi bro..!</p>
+                                        <a href="#">add to cart</a>
+                                        <span class="price">RS:50/-</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div id="cake_block">
+                                <div class="box-container">
+                                    <div class="box">
+                                        <div class="image">
+                                            <img src="img/cake1.png" alt="" width="300px">
+                                            <a href="#" class="fa fa-heart"></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                        
+                                            </div>
+                                            <h3>Pastry</h3>
+                                            <p>thintey thinali anipistundhi bro..!</p>
+                                            <a href="#">add to cart</a>
+                                            <span class="price">RS:50/-</span>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="box">
+                                        <div class="image">
+                                            <img src="img/cake2.png" alt="" width="300px">
+                                            <a href="#" class="fa fa-heart"></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                        
+                                            </div>
+                                            <h3> party Pack</h3>
+                                            <p>thintey thinali anipistundhi bro..!</p>
+                                            <a href="#">add to cart</a>
+                                            <span class="price">RS:50/-</span>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="box">
+                                        <div class="image">
+                                            <img src="img/cake3.png" alt="" width="300px">
+                                            <a href="#" class="fa fa-heart"></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                        
+                                            </div>
+                                            <h3>Pudding</h3>
+                                            <p>thintey thinali anipistundhi bro..!</p>
+                                            <a href="#" class="add-to-cart">add to cart</a>
+                                            <span class="price">RS:50/-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+
+
+                                <div id="coffe_block">
+                                    <div class="box-container">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="img/cof1.png" alt="" width="300px">
+                                                <a href="#" class="fa fa-heart"></a>
+                                            </div>
+                                            <div class="content">
+                                                <div class="stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                            
+                                                </div>
+                                                <h3>Black COffie</h3>
+                                                <p>thagithey thagali anipistundhi bro..!</p>
+                                                <a href="#">add to cart</a>
+                                                <span class="price">RS:50/-</span>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="img/cof2.png" alt="" width="300px">
+                                                <a href="#" class="fa fa-heart"></a>
+                                            </div>
+                                            <div class="content">
+                                                <div class="stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                            
+                                                </div>
+                                                <h3>Capcheno</h3>
+                                                <p>thagithey thagali anipistundhi bro..!</p>
+                                                <a href="#">add to cart</a>
+                                                <span class="price">RS:50/-</span>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="img/cof3.png" alt="" width="300px">
+                                                <a href="#" class="fa fa-heart"></a>
+                                            </div>
+                                            <div class="content">
+                                                <div class="stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                            
+                                                </div>
+                                                <h3>contenental</h3>
+                                                <p>thagithey thagali anipistundhi bro..!</p>
+                                                <a href="#">add to cart</a>
+                                                <span class="price">RS:50/-</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div id="sea_block">
+                                        <div class="box-container">
+                                            <div class="box">
+                                                <div class="image">
+                                                    <img src="img/sea1.png" alt="" width="300px">
+                                                    <a href="#" class="fa fa-heart"></a>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="stars">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                
+                                                    </div>
+                                                    <h3>FIsh Fry</h3>
+                                                    <p>thintey thinali anipistundhi bro..!</p>
+                                                    <a href="#">add to cart</a>
+                                                    <span class="price">RS:50/-</span>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="box">
+                                                <div class="image">
+                                                    <img src="img/sea2.png" alt="" width="300px">
+                                                    <a href="#" class="fa fa-heart"></a>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="stars">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                
+                                                    </div>
+                                                    <h3>Labstore</h3>
+                                                    <p>thintey thinali anipistundhi bro..!</p>
+                                                    <a href="#">add to cart</a>
+                                                    <span class="price">RS:50/-</span>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="box">
+                                                <div class="image">
+                                                    <img src="img/sea3.png" alt="" width="300px">
+                                                    <a href="#" class="fa fa-heart"></a>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="stars">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                
+                                                    </div>
+                                                    <h3>Prawns</h3>
+                                                    <p>thintey thinali anipistundhi bro..!</p>
+                                                    <a href="#">add to cart</a>
+                                                    <span class="price">RS:50/-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                        <div id="fruit_block">
+                                            <div class="box-container">
+                                                <div class="box">
+                                                    <div class="image">
+                                                        <img src="img/fru1.png" alt="" width="300px">
+                                                        <a href="#" class="fa fa-heart"></a>
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                    
+                                                        </div>
+                                                        <h3>Apple</h3>
+                                                        <p>thintey thinali anipistundhi bro..!</p>
+                                                        <a href="#">add to cart</a>
+                                                        <span class="price">RS:50/-</span>
+                                                    </div>
+                                                </div>
+                                    
+                                                <div class="box">
+                                                    <div class="image">
+                                                        <img src="img/fru2.png" alt="" width="300px">
+                                                        <a href="#" class="fa fa-heart"></a>
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                    
+                                                        </div>
+                                                        <h3>Orange</h3>
+                                                        <p>thintey thinali anipistundhi bro..!</p>
+                                                        <a href="#">add to cart</a>
+                                                        <span class="price">RS:50/-</span>
+                                                    </div>
+                                                </div>
+                                    
+                                                <div class="box">
+                                                    <div class="image">
+                                                        <img src="img/fry2.png" alt="" width="300px">
+                                                        <a href="#" class="fa fa-heart"></a>
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                    
+                                                        </div>
+                                                        <h3>Mango</h3>
+                                                        <p>thintey thinali anipistundhi bro..!</p>
+                                                        <a href="#">add to cart</a>
+                                                        <span class="price">RS:50/-</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+    </section>
+    <div class="sidebar" id="sidebar">
+        <div id="sidebar-close">
+            <i class="fa fa-times" aria-hidden="true" id="close-cart-btn"></i>
+            </div>
+            <div class="cart-menu">
+                <h3>My cart</h3>
+                <div class="cart-items">
+                    empty cart
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="total-amount">
+                    <h5>Total</h5>
+                    <h5 id="cart-total">00</h5>
+                </div>
+                <button class="checkout" id="ordering">order now</button>
+            </div>
+        </div>
+        <div class="placed" id="placed">
+            <h2>order placed sucessfully</h2>
+            <img src="order.png" alt="" width="150px">
+            <button id="backhome">Back to home</button>
+        </div>
+        <div class="payments" id="payments">
+            <div id="placing">
+                <h1>select payment modes</h1>
+            <div class="methods">
+                <div class="method">
+                    <input type="radio" name="paytm" id="paytm">
+                    <label for="paytm">paytm</label>
+                </div>
+                <div class="method">
+                    <input type="radio" name="paytm" id="gpay">
+                    <label for="gpay">Gpay</label>
+                </div>
+                <div class="method">
+                    <input type="radio" name="paytm" id="card">
+                    <label for="card">credit/debit</label>
+                </div>
+                <div class="method">
+                    <input type="radio" name="paytm" id="cash">
+                    <label for="cash">cash on delivery</label>
+                </div>
+            </div>
+            <div class="bill">
+                <h3>Total bill:</h3>
+                <div class="billdiv">
+                    <h4>ITEMS:</h4>
+                    <span id="itembill">00</span>
+                </div>
+                <div class="billdiv">
+                    <h4>Gst:</h4>
+                    <span class="Gst">Rs:12/-</span>
+                </div>
+                <div class="billdiv">
+                    <h4>Delivery:</h4>
+                    <span class="divivery">Rs:50</span>
+                </div>
+                <div class="billdiv">
+                    <h4>Amout Payable:</h4>
+                    <span id="totalcost">00</span>
+                </div>
+                <div class="buttons">
+                    <button id="place">place order</button>
+                    <button id="back">back to cart</button>
+                </div>
+
+            </div>
+        </div>
+       
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".home-slider", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+            loop:true,
+        });
+      </script>
+     <script>
+        const searchBtn = document.getElementById("serch_button");
+        const searchBox = document.getElementById("search-box");
+        const searchInput = document.getElementById("search-input");
+        const suggestionBox = document.getElementById("search-suggestions");
+      
+        // Show/Hide search input
+        searchBtn.addEventListener("click", () => {
+          if (searchBox.style.display === "none") {
+            searchBox.style.display = "block";
+            searchInput.focus();
+          } else {
+            searchBox.style.display = "none";
+            suggestionBox.style.display = "none";
+            searchInput.value = "";
+          }
+        });
+      
+        // Get all item names and elements
+        const allBoxes = document.querySelectorAll(".box");
+        const items = Array.from(allBoxes).map(box => ({
+          name: box.querySelector(".name").textContent.trim(),
+          element: box
+        }));
+      
+        // Search logic with suggestions
+        searchInput.addEventListener("input", () => {
+          const searchTerm = searchInput.value.toLowerCase();
+          suggestionBox.innerHTML = "";
+          
+          if (searchTerm === "") {
+            suggestionBox.style.display = "none";
+            return;
+          }
+      
+          const matches = items.filter(item =>
+            item.name.toLowerCase().includes(searchTerm)
+          );
+      
+          if (matches.length > 0) {
+            suggestionBox.style.display = "block";
+            matches.forEach(match => {
+              const div = document.createElement("div");
+              div.textContent = match.name;
+              div.classList.add("suggestion-item");
+              div.addEventListener("click", () => {
+                match.element.scrollIntoView({ behavior: "smooth" });
+                suggestionBox.style.display = "none";
+              });
+              suggestionBox.appendChild(div);
+            });
+          } else {
+            suggestionBox.style.display = "none";
+          }
+        });
+      </script>
+      <div id="toast" style="display: none;">
+  Item added to cart 🛒
+</div>
+
+      
+</body>
+</html>
